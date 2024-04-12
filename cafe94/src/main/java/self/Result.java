@@ -29,6 +29,6 @@ public class Result {
     
     @FXML
     private void switchToBrowsingPage() throws IOException {
-        App.setRoot("menu");
+        App.setRoot("Menu");
     }
 }

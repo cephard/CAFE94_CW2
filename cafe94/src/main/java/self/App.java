@@ -18,19 +18,20 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("view"), 700, 480);
+        scene = new Scene(loadFXML("view"), 854, 480);
         stage.setScene(scene);
+        stage.setMinWidth(854);
+        stage.setMinHeight(480);
         stage.show();
     }
     @FXML
     private void switchToStaff() throws IOException {
-        App.setRoot("menu");
+        App.setRoot("Menu");
     }
     @FXML
     private void switchToCustomer() throws IOException {
         App.setRoot("customer");
     }
-
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }

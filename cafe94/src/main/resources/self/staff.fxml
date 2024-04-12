@@ -5,7 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="368.0" prefWidth="354.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="self.StaffController">
+<VBox stylesheets="@menucss.css" alignment="CENTER" prefHeight="368.0" prefWidth="354.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Staff.StaffController">
    <children>
       <Label text="Primary View" />
       <Button fx:id="loginButton" mnemonicParsing="false" onAction="#switchToLogin" text="Login" />

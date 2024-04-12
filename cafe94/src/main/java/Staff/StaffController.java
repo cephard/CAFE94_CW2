@@ -1,7 +1,8 @@
-package self;
+package Staff;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
+import self.App;
 
 public class StaffController {
 

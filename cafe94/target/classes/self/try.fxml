@@ -14,9 +14,9 @@
         <?import javafx.scene.control.MenuItem?>
         <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" >
+<AnchorPane stylesheets="@menucss.css" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" >
 <children>
-    <MenuBar prefHeight="25.0" prefWidth="600.0" styleClass="menu-bar">
+    <MenuBar prefHeight="25.0" prefWidth="600.0" styleClass="Menu-bar">
         <menus>
             <Menu mnemonicParsing="false" text="File">
                 <items>
@@ -26,7 +26,7 @@
                     <MenuItem mnemonicParsing="false" text="Exit" />
                 </items>
             </Menu>
-            <!-- Add more menus and menu items as needed -->
+            <!-- Add more menus and Menu items as needed -->
         </menus>
     </MenuBar>
 </children>

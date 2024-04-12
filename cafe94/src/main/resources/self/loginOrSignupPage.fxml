@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginOrSignUpPageContoller">
+<Pane stylesheets="@menucss.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginOrSignUpPageContoller">
    <children>
       <Button fx:id="loginButtton" layoutX="242.0" layoutY="130.0" mnemonicParsing="false" onAction="#switchTologin" text="Login" />
       <Button fx:id="signUpbutton" layoutX="238.0" layoutY="206.0" mnemonicParsing="false" onAction="#switchToSignUp" text="SignUp" />

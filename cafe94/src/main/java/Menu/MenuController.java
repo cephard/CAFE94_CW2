@@ -1,5 +1,9 @@
 package Menu;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import order.Order;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -37,6 +41,19 @@ public class MenuController {
     @FXML private StackPane stackPane12;
     @FXML private static Order order = new Order(2334);;
     public String[] items = new String[5];
+
+    public void openOrderWindow() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("C:\\Users\\Ceph\\IdeaProjects\\Cafe94\\cafe94\\src\\main\\resources\\self\\Order.fxml"));
+            Parent root = loader.load();
+            Stage orderStage = new Stage();
+            orderStage.setScene(new Scene(root));
+            orderStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public void initialize() {
         stackPane1.setOnMouseClicked(event -> {
@@ -84,6 +101,7 @@ public class MenuController {
         stackPane.getChildren().add(text);
     }
 
+
     /**
      * Method to extract selected items from the menu in form of an order
      * @Ceph
@@ -123,7 +141,8 @@ public class MenuController {
 
     @FXML
     private void switchToView() throws IOException {
-        App.setRoot("view");
+        openOrderWindow();
+       // App.setRoot("view");
     }
 
     @FXML

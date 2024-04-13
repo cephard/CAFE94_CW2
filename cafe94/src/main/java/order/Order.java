@@ -1,13 +1,11 @@
 package order;
 
 import Menu.MenuItem;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
     private final List<MenuItem> order;
-    private static int nextId = 1;
     private int orderId;
 
     public Order(int orderId) {

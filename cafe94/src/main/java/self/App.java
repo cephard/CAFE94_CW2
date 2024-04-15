@@ -26,11 +26,11 @@ public class App extends Application {
     }
     @FXML
     private void switchToStaff() throws IOException {
-        App.setRoot("Menu");
+        App.setRoot("menu");
     }
     @FXML
     private void switchToCustomer() throws IOException {
-        App.setRoot("customer");
+        App.setRoot("loginOrSignUpPage");
     }
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));

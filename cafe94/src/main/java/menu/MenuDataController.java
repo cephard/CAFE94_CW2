@@ -1,4 +1,4 @@
-package Menu;
+package menu;
 
 import org.apache.poi.ss.usermodel.*;
 

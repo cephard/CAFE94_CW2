@@ -1,4 +1,6 @@
-package Menu;
+package menu;
+
+import javafx.scene.image.Image;
 
 public class MenuItem {
     private String name;
@@ -6,15 +8,36 @@ public class MenuItem {
     private double price;
     private int calories;
     private boolean vegan;
+    private String itemImagePath;
+    private int quantity;
+    private Image image;
 
-    public MenuItem(String name, String type, double price, int calories, boolean vegan) {
+    public MenuItem(String name, String type, double price, int calories, boolean vegan, int quantity, String itemImagePath) {
         this.name = name;
         this.type = type;
         this.price = price;
         this.calories = calories;
         this.vegan = vegan;
+        this.quantity = quantity;
+        this.itemImagePath = itemImagePath;
+    }
+    public MenuItem(String name, String type, double price, int calories, boolean vegan, int quantity) {
+        this.name = name;
+        this.type = type;
+        this.price = price;
+        this.calories = calories;
+        this.vegan = vegan;
+        this.quantity = quantity;
+        this.itemImagePath = itemImagePath;
     }
 
+
+    public void setItemImage(String itemImagePath){
+
+    }
+    public String getImagePath(){
+        return itemImagePath;
+    }
     public String getName() {
         return name;
     }
@@ -54,6 +77,11 @@ public class MenuItem {
     public void setVegan(boolean vegan) {
         this.vegan = vegan;
     }
+    public int getQuantity(){
+        return quantity;
+    }
+
+
 
     @Override
     public String toString() {
@@ -65,6 +93,7 @@ public class MenuItem {
                 ", vegan=" + vegan +
                 '}';
     }
+
 }
 
 

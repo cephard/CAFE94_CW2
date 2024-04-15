@@ -48,16 +48,32 @@
                      </font></PasswordField>
                </children>
             </VBox>
-            <HBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="372.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <children>
-                  <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#switchToSignUp" text="SignUp" />
-                  <Button fx:id="resultButton" mnemonicParsing="false" onAction="#switchToResult" text="Login" />
-                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#switchToView" text="Back" />
-               </children>
+            <VBox spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
-            </HBox>
+               <children>
+                  <Label prefHeight="21.0" prefWidth="374.0" text="If you dont have an account signup below!">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="372.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#switchToSignUp" text="SignUp" />
+                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#switchToView" text="Back" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <Label alignment="CENTER" prefHeight="29.0" prefWidth="376.0" text="Welcome Back" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
          </children>
       </GridPane>
   </items>

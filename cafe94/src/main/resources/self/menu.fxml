@@ -11,9 +11,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane minHeight="480.0" minWidth="854.0" prefHeight="633.0" prefWidth="873.0" stylesheets="@menucss.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.MenuController">
+<BorderPane minHeight="480.0" minWidth="854.0" prefHeight="633.0" prefWidth="873.0" stylesheets="@menucss.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.MenuController">
     <center>
-        <GridPane alignment="CENTER" prefHeight="523.0" prefWidth="831.0" BorderPane.alignment="CENTER">
+        <GridPane alignment="CENTER" hgap="10.0" prefHeight="523.0" prefWidth="831.0" vgap="10.0" BorderPane.alignment="CENTER">
             <columnConstraints>
                 <ColumnConstraints hgrow="ALWAYS" />
                 <ColumnConstraints hgrow="ALWAYS" />
@@ -28,135 +28,177 @@
             </rowConstraints>
          <StackPane fx:id="stackPane1" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover">
             <GridPane.margin>
-                <Insets bottom="2.5" left="0" right="2.5" top="0" />
+                <Insets />
             </GridPane.margin>
             <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Croissant £2.10" textAlignment="CENTER" wrappingWidth="90.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Croissant                    £2.10" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children>
          </StackPane>
          <StackPane fx:id="stackPane2" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.columnIndex="1">
             <GridPane.margin>
-                <Insets bottom="2.5" left="0" right="2.5" top="0" />
+                <Insets />
             </GridPane.margin>
             <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Avocado Toast £5.75" textAlignment="CENTER" wrappingWidth="114.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Avocado Toast           £5.75" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children></StackPane>
          <StackPane fx:id="stackPane3" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.columnIndex="2">
              <GridPane.margin>
-                 <Insets bottom="2.5" left="0" right="2.5" top="0" />
+                 <Insets />
              </GridPane.margin>
             <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Caprese Salad £7.99" textAlignment="CENTER" wrappingWidth="112.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Caprese             Salad £7.99" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children></StackPane>
          <StackPane fx:id="stackPane4" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.columnIndex="3">
              <GridPane.margin>
-                 <Insets bottom="2.5" left="0" right="0" top="0" />
+                 <Insets />
              </GridPane.margin>
              <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Grilled Sandwich £4.93" textAlignment="CENTER" wrappingWidth="118.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Grilled Sandwich        £4.93" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children></StackPane>
          <StackPane fx:id="stackPane5" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.rowIndex="1">
              <GridPane.margin>
-                 <Insets bottom="2.5" left="0" right="2.5" top="0" />
+                 <Insets />
              </GridPane.margin>
              <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Blueberry Muffin £2.99" textAlignment="CENTER" wrappingWidth="125.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Blueberry Muffin         £2.99" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children></StackPane>
          <StackPane fx:id="stackPane6" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.columnIndex="1" GridPane.rowIndex="1">
              <GridPane.margin>
-                 <Insets bottom="2.5" left="0" right="2.5" top="0" />
+                 <Insets />
              </GridPane.margin>
              <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Quinoa Salad £7.19" textAlignment="CENTER" wrappingWidth="113.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Quinoa Salad               £7.19" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children>
          </StackPane>
          <StackPane fx:id="stackPane7" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.columnIndex="2" GridPane.rowIndex="1">
              <GridPane.margin>
-                 <Insets bottom="2.5" left="0" right="2.5" top="0" />
+                 <Insets />
              </GridPane.margin>
              <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Veggie Wrap £6.99" textAlignment="CENTER" wrappingWidth="106.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Veggie Wrap                £6.99" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children></StackPane>
          <StackPane fx:id="stackPane8" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.columnIndex="3" GridPane.rowIndex="1">
              <GridPane.margin>
-                 <Insets bottom="2.5" left="0" right="0" top="0" />
+                 <Insets />
              </GridPane.margin>
              <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Broth Bowl £7.99" textAlignment="CENTER" wrappingWidth="99.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Broth Bowl                   £7.99" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children></StackPane>
          <StackPane fx:id="stackPane9" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.rowIndex="2">
              <GridPane.margin>
-                 <Insets bottom="0" left="0" right="2.5" top="0" />
+                 <Insets />
              </GridPane.margin>
              <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Chai Latte £3.99" textAlignment="CENTER" wrappingWidth="82.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Chai Latte                    £3.99" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children></StackPane>
          <StackPane fx:id="stackPane10" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.columnIndex="1" GridPane.rowIndex="2">
              <GridPane.margin>
-                 <Insets bottom="0" left="0" right="2.5" top="0" />
+                 <Insets />
              </GridPane.margin>
              <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Cream Bagel £3.49," textAlignment="CENTER" wrappingWidth="101.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Cream Bagel                £3.49" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children></StackPane>
          <StackPane fx:id="stackPane11" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.columnIndex="2" GridPane.rowIndex="2">
              <GridPane.margin>
-                 <Insets bottom="0" left="0" right="2.5" top="0" />
+                 <Insets />
              </GridPane.margin>
              <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Fruit Smoothie £5.99" textAlignment="CENTER" wrappingWidth="112.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Fruit Smoothie            £5.99" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
             </children></StackPane>
          <StackPane fx:id="stackPane12" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" styleClass="stack-pane-hover" GridPane.columnIndex="3" GridPane.rowIndex="2">
             <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Club Sandwich £8.49" textAlignment="CENTER" wrappingWidth="105.13671875" StackPane.alignment="BOTTOM_CENTER">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blueberry-text" text="Club Sandwich            £8.49" textAlignment="CENTER" wrappingWidth="200.0" StackPane.alignment="TOP_CENTER">
                   <font>
                      <Font size="15.0" />
                   </font>
+                  <StackPane.margin>
+                     <Insets top="7.0" />
+                  </StackPane.margin>
                </Text>
-            </children></StackPane>
+            </children>
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin></StackPane>
+         <BorderPane.margin>
+            <Insets left="2.5" right="2.5" top="2.5" />
+         </BorderPane.margin>
         </GridPane>
     </center>
     <padding>

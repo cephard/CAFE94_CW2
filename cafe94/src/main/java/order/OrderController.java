@@ -1,8 +1,8 @@
 package order;
 
-import Menu.MenuController;
-import Menu.MenuItem;
-import payment.PrintReceipt;
+import menu.MenuController;
+import menu.MenuItem;
+import transaction.PrintReceipt;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
@@ -11,13 +11,13 @@ import javafx.collections.ObservableList;
 import java.io.IOException;
 
 public class OrderController {
-    Order order = MenuController.getItemsFromMenu();
+    Order order = MenuController.getOrderFromMenu();
     @FXML
     private ListView<String> orderListView = new ListView<>();
 
     @FXML
     private void switchToMenu() throws IOException {
-        App.setRoot("Menu");
+        App.setRoot("menu");
     }
 
     public void initialize() {
@@ -35,7 +35,7 @@ public class OrderController {
     public void handleCheckOutButtonClick() {
         String receiptName;
         receiptName = String.valueOf(order.getOrderId());
-        String filePath = "C:\\Users\\Ceph\\IdeaProjects\\Cafe94\\cafe94\\src\\main\\resources\\self\\Receipt\\" + receiptName + ".csv";
+        String filePath = "cafe94/src/main/resources/self/Receipt" + receiptName + ".csv";
         PrintReceipt.writeOrderDetailsToCSV(order, filePath);
     }
 }

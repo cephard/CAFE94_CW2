@@ -1,6 +1,6 @@
 package order;
 
-import Menu.MenuItem;
+import menu.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 

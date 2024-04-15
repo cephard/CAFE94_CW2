@@ -66,81 +66,81 @@
     -fx-background-repeat: no-repeat;
 }
 #stackPane1 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/crossiant.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 #stackPane2 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Avocado_Toast.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 #stackPane3 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Caprese_Salad.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 #stackPane4 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Grilled_Sandwich.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 
 #stackPane5 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Blueberry_Muffin.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 
 #stackPane6 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Quinoa_Salad.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 #stackPane7 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Veggie_Wrap.jpg');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 
 #stackPane8 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Broth_Bowl.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 
 #stackPane9 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Chai_Latte.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 #stackPane10 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Cream_Bagel.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 
 #stackPane11 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Fruit_Smoothie.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 
 #stackPane12 {
-    -fx-background-image: url('IMAGES/eatables-3873462_1920.jpg');
+    -fx-background-image: url('IMAGES/Club_Sandwich.png');
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     }
 
 .stack-pane-hover:hover {
-    -fx-effect: dropshadow(gaussian, rgba(70, 130, 180, 0.5), 8, 0.5, 0, 0);
+    -fx-effect: dropshadow(gaussian, rgba(70, 130, 180, 0.5), 12, 0.5, 0, 0);
     -fx-font-size: 1.3em;
     -fx-font-weight: bold;
     -fx-background-color: rgba(255, 255, 255, 0.5);
 }
 
 .stack-pane-hover{
--fx-effect: dropshadow(gaussian, rgba(70, 130, 180, 0.5), 2, 0.5, 0, 0);
+-fx-effect: dropshadow(gaussian, rgba(70, 130, 180, 0.5), 5, 0.5, 0, 0);
 -fx-background-color:#FFFFFF;
 -fx-background-color: black;
 }
@@ -155,3 +155,60 @@
     -fx-text-alignment: center;
     -fx-wrap-text: true;
 }
+
+.menuitem-text {
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 2em;
+    -fx-fill: #333;
+    -fx-stroke-type: outside;
+    -fx-font-weight: bold;
+    -fx-stroke-width: 0.0;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+
+/* Style for ListView */
+.list-view {
+    -fx-control-inner-background: #f0f0f0;
+    -fx-font-size: 14px;
+}
+
+list-view .cell {
+    -fx-padding: 10px 20px; /* Adjust the padding */
+}
+.list-view .cell:even {
+    -fx-background-color: #ffffff;
+}
+
+.list-view .cell:odd {
+    -fx-background-color: #228B22;
+    -fx-text-fill: white;
+}
+
+/* menucss.css */
+#imageView {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-fit-width: 100%;
+    -fx-fit-height: 100%;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-background-color: #f9f9f9; /* Background color */
+    -fx-transition: all 0.3s ease; /* Smooth transition */
+}
+
+#image-view:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 0); /* Hover effect */
+    -fx-border-color: #666; /* Darker border color on hover */
+}
+
+/* Apply styles to the Insets */
+.insets {
+    -fx-top: 20px;
+    -fx-right: 20px;
+    -fx-bottom: 20px;
+    -fx-left: 20px;
+}
+

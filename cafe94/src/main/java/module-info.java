@@ -11,10 +11,10 @@ module self {
     exports login;
     exports customer;
     opens customer to javafx.fxml;
-    exports Menu;
-    opens Menu to javafx.fxml;
-    exports payment;
-    opens payment to javafx.fxml;
+    exports menu;
+    opens menu to javafx.fxml;
+    exports transaction;
+    opens transaction to javafx.fxml;
     exports order;
     opens order to javafx.fxml;
     exports Staff;

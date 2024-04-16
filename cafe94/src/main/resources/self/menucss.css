@@ -158,7 +158,7 @@
 
 .menuitem-text {
     -fx-font-family: "Arial", sans-serif;
-    -fx-font-size: 2em;
+    -fx-font-size: 1.5em;
     -fx-fill: #333;
     -fx-stroke-type: outside;
     -fx-font-weight: bold;
@@ -171,12 +171,13 @@
 /* Style for ListView */
 .list-view {
     -fx-control-inner-background: #f0f0f0;
-    -fx-font-size: 14px;
+    -fx-font-size: 1.2em;
 }
 
 list-view .cell {
-    -fx-padding: 10px 20px; /* Adjust the padding */
+    -fx-min-height: 100px;
 }
+
 .list-view .cell:even {
     -fx-background-color: #ffffff;
 }
@@ -186,7 +187,6 @@ list-view .cell {
     -fx-text-fill: white;
 }
 
-/* menucss.css */
 #imageView {
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
     -fx-fit-width: 100%;

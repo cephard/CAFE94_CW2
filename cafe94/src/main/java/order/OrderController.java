@@ -27,15 +27,19 @@ public class OrderController {
                     item.getName(), item.getType(), item.getPrice(), item.getCalories(), item.isVegan() ? "Yes" : "No");
             orderItems.add(itemInfo);
         }
-
         orderListView.setItems(orderItems);
     }
 
     @FXML
-    public void handleCheckOutButtonClick() {
+    public void handleCheckOutButtonClick() throws IOException {
         String receiptName;
         receiptName = String.valueOf(order.getOrderId());
         String filePath = "cafe94/src/main/resources/self/Receipt" + receiptName + ".csv";
         PrintReceipt.writeOrderDetailsToCSV(order, filePath);
+        backTOStart();
+    }
+
+    private void backTOStart() throws IOException {
+        App.setRoot("view");
     }
 }

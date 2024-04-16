@@ -96,9 +96,11 @@ public class MenuController {
 
     private void handleStackPaneClick(StackPane stackPane, MenuItem menuItem) {
         order.addItem(menuItem);
-        //Text text = new Text("Added: " + menuItem.getName());
-        //stackPane.getChildren().add(text);
         selectedMenuItem = menuItem;
+        switchToMenuItem();
+    }
+
+    private void switchToMenuItem(){
         try {
             App.setRoot("MenuItem");
         } catch (IOException e) {

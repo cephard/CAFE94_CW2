@@ -14,20 +14,20 @@ public class LoginController {
     protected final String admin_User = "admin";
     protected final String admin_Pass = "admin";
     public static String userName1;
-     @FXML private TextField UserNameButton;
+    @FXML private TextField UserNameButton;
     @FXML private TextField passwordButton;
     //@FXML private Label resultBox;
     @FXML private Text loginStatus;
     //static UserData data = new UserData();
-static CustomerLoginController data = new CustomerLoginController();
+    static CustomerLoginController data = new CustomerLoginController();
 
 
 
     @FXML
     public void switchToResult() throws IOException {
 
-            String regID = UserNameButton.getText();
-            String userPassword = passwordButton.getText();
+        String regID = UserNameButton.getText();
+        String userPassword = passwordButton.getText();
 
 
 //                if (data.checkUser(userName) && data.checkUserPass(userPassword)) {
@@ -57,13 +57,13 @@ static CustomerLoginController data = new CustomerLoginController();
 
         return data.getUserName();
     }
-     @FXML
-     public void switchToView() throws IOException {
-         App.setRoot("view");
-     }
+    @FXML
+    public void switchToView() throws IOException {
+        App.setRoot("view");
+    }
 
-     @FXML
+    @FXML
     public  void switchToSignUp() throws  IOException{
         App.setRoot("signUpPage");
-     }
+    }
 }

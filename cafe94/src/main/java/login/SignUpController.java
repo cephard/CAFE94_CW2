@@ -1,6 +1,5 @@
 package login;
 
-import customer.Customer;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import org.apache.poi.ss.usermodel.*;
@@ -23,7 +22,6 @@ public class SignUpController {
     @FXML private Text displayPasswordStatus;
 
     ArrayList<String> userData = new ArrayList<>();
-
     String pass = "success full registered...plz LogIn";
     String fail = " Password doesn't match please try again..!!!";
 
@@ -38,22 +36,21 @@ public class SignUpController {
             userData.add( addressButton.getText());
             userData.add(phoneNumberButton.getText());
             userData.add(passwordButton.getText());
+
             regID=saveNewUserData(userData);
-             displayPasswordStatus.setText(pass+"\nYour RegisterId is "+regID);
-             int phoneNumber = Integer.parseInt(phoneNumberButton.getText());
-            Customer customer = new Customer(Integer.parseInt(regID), firstNameButton.getText(),lastNameButton.getText(),addressButton.getText(),phoneNumber);
-           App.setRoot("login");
+            displayPasswordStatus.setText(pass+"\nYour RegisterId is "+regID);
+            // App.setRoot("login");
         } else {
+
             displayPasswordStatus.setText(fail);
-           App.setRoot("view");
+            //App.setRoot("signUpPage");
         }
 
 
-
     }
-//String fName, String lName,String gmail,String address, String pNo, String password
+    //String fName, String lName,String gmail,String address, String pNo, String password
     public static String saveNewUserData(ArrayList<String> userData)  {
-        String filePath = "login/Data.xlsx";
+        String filePath = "cafe94/src/main/java/login/Data.xlsx";
         String regID="";
         try {
             FileInputStream fileInputStream = new FileInputStream(new File(filePath));
@@ -67,7 +64,7 @@ public class SignUpController {
             regID = userData.get(0)+r+"";
             cell.setCellValue(regID);
             for (int i = 1; i < 7; i++) {
-                 cell = row.createCell(i);
+                cell = row.createCell(i);
                 cell.setCellValue(userData.get(i));
                 //System.out.println("Excel file edited successfully.");
             }

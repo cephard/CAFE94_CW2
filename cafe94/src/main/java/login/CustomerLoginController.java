@@ -23,7 +23,7 @@ public class CustomerLoginController {
     }
     public static boolean checkUserData(String regID,String password)  {
         boolean flag = false;
-        String filePath = "C:/Users/kiran/Projects/Cafe94/cafe94/src/main/java/login/Data.xlsx";
+        String filePath = "cafe94/src/main/java/login/Data.xlsx";
         try {
             FileInputStream fileInputStream = new FileInputStream(new File(filePath));
             Workbook workbook = WorkbookFactory.create(fileInputStream);

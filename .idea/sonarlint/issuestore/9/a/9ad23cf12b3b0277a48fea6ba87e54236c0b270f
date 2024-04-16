@@ -1,0 +1,26 @@
+
+k
+java:S1104"UMake userName1 a static final constant or non-public and provide accessors if needed.(¿´º¡
+E
+java:S1444"/Make this "public static userName1" field final(¿´º¡
+Q	java:S125"<This block of commented-out lines of code should be removed.(ƒä‚Ä
+o	java:S116"URename this field "admin_User" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èëë¡ûÿÿÿÿ
+j	java:S116"URename this field "admin_Pass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®Ž…õ
+m	java:S116"YRename this field "UserNameButton" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î©Ù~
+<
+java:S1170"!Make this final field static too.(èëë¡ûÿÿÿÿ
+7
+java:S1170"!Make this final field static too.(®Ž…õ
+Q	java:S125"<This block of commented-out lines of code should be removed.(¸“ŽŽ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Õ¤êê
+M
+java:S2440"7Remove this instantiation of "CustomerLoginController".(–É—ž
+Q	java:S125!"<This block of commented-out lines of code should be removed.(î€›û
+K
+java:S2209*"5Change this instance-reference to a static reference.(¥£‡®
+Q
+java:S2696,"6Make the enclosing method "static" or remove this set.(Ì¨¶ùùÿÿÿÿ
+V	java:S125+"<This block of commented-out lines of code should be removed.(Ëé¾¥ÿÿÿÿÿ
+V	java:S1252"<This block of commented-out lines of code should be removed.(“¦œüÿÿÿÿ
+P
+java:S2209:"5Change this instance-reference to a static reference.(Ð¤¢üÿÿÿÿ

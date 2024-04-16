@@ -1,0 +1,51 @@
+
+”
+java:S1104)"QMake items a static final constant or non-public and provide accessors if needed.(àÌğÊ8ˆñùºì1J$36ae4a05-e468-4261-8a19-874ba8be5c1e
+t
+java:S1602-",Remove useless curly braces around statement(Ë¢¼¾şÿÿÿÿ8óùºì1J$b273cd9a-b1ce-4ff3-99d3-2259aa285267
+t
+java:S16021",Remove useless curly braces around statement(ñ˜èİùÿÿÿÿ8óùºì1J$d1f9b1b3-b996-4405-bff4-8e4e91aca997
+o
+java:S16025",Remove useless curly braces around statement(ğ¨«8‘óùºì1J$98510bff-fe83-4ba8-9274-1d1c75a2604d
+t
+java:S16029",Remove useless curly braces around statement(¬ßÉÁüÿÿÿÿ8“óùºì1J$09a0dcb2-7115-4856-bd6a-82098dec9dcc
+t
+java:S1602<",Remove useless curly braces around statement(¸ÔŠÿÿÿÿÿ8”óùºì1J$60fb89f3-10cc-483e-8170-34ae425676bb
+o
+java:S1602@",Remove useless curly braces around statement(Ìò§×8–óùºì1J$09e34aab-f2f3-4359-a7f2-6335ea59739c
+t
+java:S1602D",Remove useless curly braces around statement(™£Æ€ùÿÿÿÿ8—óùºì1J$9d52fdf4-2019-4ff1-bd93-8128543cbe07
+t
+java:S1602H",Remove useless curly braces around statement(‚îœÿÿÿÿÿ8™óùºì1J$3ed7ae05-f9de-4a12-8626-ecd61df7cce1
+t
+java:S1602L",Remove useless curly braces around statement(¸¯†¶ıÿÿÿÿ8šóùºì1J$2eabc2c6-1536-45a9-8242-e38d00ccf134
+o
+java:S1602P",Remove useless curly braces around statement(ı¸Ôş8œóùºì1J$ec89ce14-b538-48f1-8cc6-e03643844103
+o
+java:S1602T",Remove useless curly braces around statement(âìû8óùºì1J$70201b81-cffd-4baf-a074-43d07ff90955
+n
+java:S1602X",Remove useless curly braces around statement(óÉ‹[8Ÿóùºì1J$d4103832-6fd3-468b-8bee-65cb3c8b6387
+µ
+java:S1130†"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‘Åâ”ÿÿÿÿÿ8³óùºì1J$a72200ae-578f-471d-a621-d5a31890d69b
+°
+java:S1130Œ"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ôÍá°8µóùºì1J$58ba448e-29bf-481e-b625-98ac6c407bd8
+°
+java:S1130’"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ìşú8¸óùºì1J$4bdd2dbe-1dc6-46a0-b311-4dad1606ddc6
+°
+java:S1130˜"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.( ôù®8ºóùºì1J$845429e1-5f09-4a12-b07d-2ad0f2b2cea7
+°
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(µ‰áÔ8½óùºì1J$a1520ab2-21d5-4e53-8447-5ea49a6ca60c
+°
+java:S1130¤"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(İÈí©8¿óùºì1J$5d1716b1-1a1c-4c67-bc29-5f0bd2e17297
+µ
+java:S1130ª"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ó¹±’úÿÿÿÿ8Âóùºì1J$09e30734-de6c-4f59-8086-7639eadcce70
+µ
+java:S1130°"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(„€€Õÿÿÿÿÿ8ƒôùºì1J$985cedc5-c4c6-4461-9d5c-353ec76400fc
+°
+java:S1130¶"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¯ê´Æ8…ôùºì1J$f29a063b-3f68-41d4-9e71-96c28121fceb
+°
+java:S1130¼"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ø¾ô×8ˆôùºì1J$2ec693ef-817b-40b4-b1ce-cf0a1dacb30e
+Š
+java:S1128"BRemove this unused import 'javafx.beans.property.IntegerProperty'.(£à¸”ıÿÿÿÿ8’ôùºì1J$ef7c36b1-0ebe-4b99-9302-aa9cf2833c45
+‹
+java:S1128"HRemove this unused import 'javafx.beans.property.SimpleIntegerProperty'.(©Ú¡8“ôùºì1J$35aa95aa-2123-4929-9dd2-39de28ba1aa7

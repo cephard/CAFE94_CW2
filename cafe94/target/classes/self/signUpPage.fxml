@@ -105,7 +105,11 @@
             <DatePicker prefHeight="30.0" prefWidth="213.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <HBox alignment="BOTTOM_LEFT" spacing="20.0" GridPane.columnIndex="3" GridPane.rowIndex="13">
                <children>
-                  <Button fx:id="loginbutton" mnemonicParsing="false" onAction="#switchToLogin" text="Login" />
+                  <Text fx:id="loginText" fill="#00a1ff" onMouseClicked="#switchToLogin" text="Log in!" underline="true">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+                  </Text>
                   <Button fx:id="signUpSaveButton" mnemonicParsing="false" onAction="#switchToSignIn" text="SignUp" />
                </children>
             </HBox>
@@ -120,6 +124,7 @@
                </font></Label>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Already Have an account ?" wrappingWidth="196.13671875" GridPane.columnIndex="3" GridPane.rowIndex="12" />
          </children>
+         <Text fx:id="displayPasswordStatus" GridPane.columnIndex="1" GridPane.rowIndex="13" />
       </GridPane>
    </center>
 </BorderPane>

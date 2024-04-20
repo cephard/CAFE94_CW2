@@ -8,7 +8,7 @@ public class MenuItem {
     private double price;
     private int calories;
     private boolean vegan;
-    private String itemImagePath;
+    private final String itemImagePath;
     private int quantity;
     private Image image;
 
@@ -21,23 +21,15 @@ public class MenuItem {
         this.quantity = quantity;
         this.itemImagePath = itemImagePath;
     }
-    public MenuItem(String name, String type, double price, int calories, boolean vegan, int quantity) {
-        this.name = name;
-        this.type = type;
-        this.price = price;
-        this.calories = calories;
-        this.vegan = vegan;
-        this.quantity = quantity;
-        this.itemImagePath = itemImagePath;
-    }
 
-
-    public void setItemImage(String itemImagePath){
+    public void setItemImage(String itemImagePath) {
 
     }
-    public String getImagePath(){
+
+    public String getImagePath() {
         return itemImagePath;
     }
+
     public String getName() {
         return name;
     }
@@ -77,10 +69,14 @@ public class MenuItem {
     public void setVegan(boolean vegan) {
         this.vegan = vegan;
     }
-    public int getQuantity(){
+
+    public int getQuantity() {
         return quantity;
     }
 
+    public void updateQuantity() {
+        quantity++;
+    }
 
 
     @Override

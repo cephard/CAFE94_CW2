@@ -9,8 +9,9 @@ import java.util.ArrayList;
 
 public class CustomerLoginController {
 
-    public static  ArrayList<String> userData = new ArrayList<>();
-//    public boolean checkUser(String uId) {
+    public static ArrayList<String> userData = new ArrayList<>();
+
+    //    public boolean checkUser(String uId) {
 //        boolean result = false;
 //        return result;
 //    }
@@ -19,9 +20,10 @@ public class CustomerLoginController {
 //       return result;
 //    }
     public static String getUserName() {
-        return userData.get(1)+userData.get(2);
+        return userData.get(1) + userData.get(2);
     }
-    public static boolean checkUserData(String regID,String password)  {
+
+    public static boolean checkUserData(String regID, String password) {
         boolean flag = false;
         String filePath = "cafe94/src/main/java/login/Data.xlsx";
         try {
@@ -32,17 +34,17 @@ public class CustomerLoginController {
             Row row;
             Cell cell;
 
-            int r = sheet.getLastRowNum() ;
-            for(int i=1;i<=r;i++) {
+            int r = sheet.getLastRowNum();
+            for (int i = 1; i <= r; i++) {
                 row = sheet.getRow(i);
                 cell = row.getCell(0);
                 if (cell.getStringCellValue().equals(regID)) {
 
-                   for(int j=0;j<7;j++) {
-                       row=sheet.getRow(i);
-                       cell =row.getCell(j);
-                       userData.add(cell.getStringCellValue());
-                   }
+                    for (int j = 0; j < 7; j++) {
+                        row = sheet.getRow(i);
+                        cell = row.getCell(j);
+                        userData.add(cell.getStringCellValue());
+                    }
                     row = sheet.getRow(i);
                     cell = row.getCell(6);
                     return cell.getStringCellValue().equals(password);
@@ -55,7 +57,7 @@ public class CustomerLoginController {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-         return false;
+        return false;
     }
 
 

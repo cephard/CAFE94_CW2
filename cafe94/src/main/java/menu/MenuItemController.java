@@ -8,18 +8,29 @@ import self.App;
 
 import java.io.IOException;
 
-public class MenuItemController {
-    @FXML private Text nameText;
-    @FXML private Text quantityText;
-    @FXML private Text priceText;
-    @FXML private Text caloriesText;
-    @FXML private ImageView imageView;
+public class MenuItemController extends MenuController {
+    @FXML
+    private Text nameText;
+    @FXML
+    private Text quantityText;
+    @FXML
+    private Text priceText;
+    @FXML
+    private Text caloriesText;
+    @FXML
+    private ImageView imageView;
 
     private MenuItem menuItem;
 
     @FXML
     private void switchToMenu() throws IOException {
         App.setRoot("Menu");
+    }
+
+    // adding item to order
+    @FXML
+    private void addItemToOrder() {
+        MenuController.order.addItem(menuItem);
     }
 
     @FXML
@@ -40,3 +51,10 @@ public class MenuItemController {
         }
     }
 }
+
+
+
+
+
+
+

@@ -10,6 +10,7 @@ public class LoginOrSignUpPageContoller {
     public void switchTologin() throws IOException {
         App.setRoot("login");
     }
+
     @FXML
     public void switchToSignUp() throws IOException {
 

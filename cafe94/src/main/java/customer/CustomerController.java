@@ -1,8 +1,9 @@
 package customer;
 
-import java.io.IOException;
 import javafx.fxml.FXML;
 import self.App;
+
+import java.io.IOException;
 
 public class CustomerController {
 
@@ -10,6 +11,7 @@ public class CustomerController {
     private void switchToLogin() throws IOException {
         App.setRoot("loginOrSignUpPage");
     }
+
     @FXML
     private void switchToView() throws IOException {
         App.setRoot("view");

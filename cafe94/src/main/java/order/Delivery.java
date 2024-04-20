@@ -1,6 +1,6 @@
 package order;
 
-public class Delivery extends Order{
+public class Delivery extends Order {
     public Delivery(int orderId) {
         super(orderId);
     }

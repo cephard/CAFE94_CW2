@@ -11,14 +11,14 @@ public class Customer {
     private final String firstName;
     private final String lastName;
     private final String address;
+    private final LocalDate creationDate;
     private boolean member;
     private ArrayList<Order> orderHistory;
     private ArrayList<Transaction> transactions;
-    private final LocalDate creationDate;
-    private int telephoneNumber;
+    private final int telephoneNumber;
 
 
-    public Customer(int customerID, String firstName, String lastName, String address,int telephoneNumber) {
+    public Customer(int customerID, String firstName, String lastName, String address, int telephoneNumber) {
         this.customerID = customerID;
         this.firstName = firstName;
         this.lastName = lastName;

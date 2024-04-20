@@ -13,7 +13,6 @@
     -fx-background-color: white;
 }
 
-
 /* Apply styles to the Insets */
 .insets {
     -fx-top: 20px;
@@ -29,7 +28,6 @@
     -fx-background-radius: 10;
     -fx-border-radius: 10;
 }
-
 
 /* Button Styles */
 .button {
@@ -132,6 +130,10 @@
     -fx-background-repeat: no-repeat;
     }
 
+#splitPane{
+-fx-background-image: url('Images/Split_Pane.jpg');
+}
+
 .stack-pane-hover:hover {
     -fx-effect: dropshadow(gaussian, rgba(70, 130, 180, 0.5), 12, 0.5, 0, 0);
     -fx-font-size: 1.3em;
@@ -142,7 +144,6 @@
 .stack-pane-hover{
 -fx-effect: dropshadow(gaussian, rgba(70, 130, 180, 0.5), 5, 0.5, 0, 0);
 -fx-background-color:#FFFFFF;
--fx-background-color: black;
 }
 
 .blueberry-text {
@@ -171,7 +172,7 @@
 /* Style for ListView */
 .list-view {
     -fx-control-inner-background: #f0f0f0;
-    -fx-font-size: 1.2em;
+    -fx-font-size: 1.5em;
 }
 
 list-view .cell {
@@ -193,22 +194,34 @@ list-view .cell {
     -fx-fit-height: 100%;
     -fx-background-radius: 10;
     -fx-border-radius: 10;
-    -fx-border-color: #ccc; /* Border color */
-    -fx-border-width: 2px; /* Border width */
-    -fx-background-color: #f9f9f9; /* Background color */
-    -fx-transition: all 0.3s ease; /* Smooth transition */
+    -fx-border-color: #ccc;
+    -fx-border-width: 2px;
+    -fx-background-color: #f9f9f9;
+    -fx-transition: all 0.3s ease;
 }
 
 #image-view:hover {
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 0); /* Hover effect */
-    -fx-border-color: #666; /* Darker border color on hover */
+    -fx-border-color: #666;
 }
 
-/* Apply styles to the Insets */
 .insets {
     -fx-top: 20px;
     -fx-right: 20px;
     -fx-bottom: 20px;
     -fx-left: 20px;
+}
+
+.splitPane:hover {
+    -fx-effect: dropshadow(gaussian, rgba(70, 130, 180, 0.5), 12, 0.5, 0, 0);
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+    -fx-background-color:#4682B4;
+    -fx-text-fill: #FFFFFF;
+}
+
+.stack-pane-hover{
+-fx-effect: dropshadow(gaussian, rgba(70, 130, 180, 0.5), 5, 0.5, 0, 0);
+-fx-background-color:#FFFFFF;
 }
 
